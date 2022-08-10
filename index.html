@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <title>Criptografador</title>
 
 </head>
 <body>
     <header>
-        <img class="icon.png" src="" alt="">
+        <img class="icon" src="images/icon.png" alt="Ícone Alura">
     </header>
-    <section id="entrada">
-        <textarea rows="" cols="">
-
-        </textarea>
-
-        <section class="buttons">
-            <aside></aside>
-            <button id="criptografar">Criptografar</button>
-            <button id="descriptografar">Descriptopgrafar</button>
+    <div class="grid">
+        <section id="entrada">
+            <textarea rows="50" cols="50">
+                Digite seu texto aqui...
+            </textarea>
+    
+            <section class="buttons">
+                <aside>Apenas letras minúsculas e sem acento</aside>
+                <button id="criptografar">Criptografar</button>
+                <button id="descriptografar">Descriptopgrafar</button>
+            </section>
         </section>
-
-
-    </section>
-
-    <section id="saida"></section>
+    
+        <section id="saida">
+            <img src="images/NotFound.png" alt="Digite algo a ser criptografado/descriptografado">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite um texto que você deseja critografar ou descriptografar.</p>
+        </section>
+    </div>
+    <footer></footer>
     
 </body>
 </html>
