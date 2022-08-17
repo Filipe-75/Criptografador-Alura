@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;800&display=swap');
+
+body{
+    font-family: 'Inter', Arial, sans-serif;
+    background: #E5E5E5;
+}
+
 h1{
     display: flex;
     flex-direction: column;
@@ -5,7 +12,7 @@ h1{
     gap: 40px;
     
     position:absolute;
-    top: 40px;
+    top: 20px;
     left: 40px;
     width: 120px;
     height: 48px;
@@ -17,6 +24,93 @@ h1 img{
 }
 
 main{
-    margin: 40px 40px 40px 240px; 
+    margin: 20px 40px 40px 200px; 
     display:flex;
+    gap: 40px;
 }
+
+textarea {
+    background: #E5E5E5;
+    border: none;
+    width: 680px;
+    height: 288px;
+
+    font-family: 'Inter', Arial, sans-serif;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+
+    margin-top: 120px;
+
+    padding-top: 8px;
+}
+
+#info{
+    background: #495057;
+    color: white;
+    border-radius: 50%;
+    border: none;
+}
+
+aside{
+    display: inline-block;
+    color: #495057;
+    margin-left: 8px;
+
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.buttons{
+    margin-top: 16px;
+}
+
+#criptografar, #descriptografar{
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+
+    color: white;
+    background: #0A3871;
+    border: none;
+
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#descriptografar {
+    color:#0A3871;
+    background: #E5E5E5;
+    border: 1px solid #0A3871;
+}
+
+#saida {
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    margin-right: 40px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+    color: #495057;
+
+}
+
+#saida p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+}
+
