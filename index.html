@@ -9,7 +9,6 @@
     
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
     <title>Criptografador</title>
 
@@ -25,19 +24,28 @@
                 <button id="info">!</button>
                 <aside>Apenas letras minúsculas e sem acento</aside>
                 <div class="buttons">
-                    <button id="criptografar">Criptografar</button>
-                    <button id="descriptografar">Descriptopgrafar</button>
+                    <button class="btn" id="criptografar">Criptografar</button>
+                    <button class="btn" id="descriptografar">Descriptopgrafar</button>
                 </div>
             </section>
         </section>
     
         <section id="saida">
-            <img src="images/NotFound.png" alt="Digite algo a ser criptografado/descriptografado">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja critografar ou descriptografar.</p>
+            <div id="nao-encontrado">
+                <img src="images/NotFound.png" alt="Digite algo a ser criptografado/descriptografado">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja critografar ou descriptografar.</p>
+            </div>
+            <div class="invisivel" id="retorno">
+                <textarea id="mensagem-retornada" cols="30" rows="30"></textarea>
+                <button class="btn" id="copiar">Copiar</button>
+            </div>
         </section>
     </main>
     <footer></footer>
     
 </body>
+
+<script src="script.js"></script>
+
 </html>

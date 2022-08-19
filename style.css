@@ -24,7 +24,7 @@ h1 img{
 }
 
 main{
-    margin: 20px 40px 40px 200px; 
+    margin: 20px 40px 40px 120px; 
     display:flex;
     gap: 40px;
 }
@@ -50,6 +50,9 @@ textarea {
     color: white;
     border-radius: 50%;
     border: none;
+    
+    width: 16px;
+    height: 16px;
 }
 
 aside{
@@ -65,23 +68,30 @@ aside{
     margin-top: 16px;
 }
 
-#criptografar, #descriptografar{
+.btn {
     width: 328px;
     padding: 24px;
     border-radius: 24px;
+    transition: 0.5s all;
 
-    color: white;
-    background: #0A3871;
-    border: none;
+    color:#0A3871;
+    background: #E5E5E5;
+    border: 1px solid #0A3871;
+    margin-left: 8px;
 
     font-weight: 400;
     font-size: 16px;
 }
 
-#descriptografar {
-    color:#0A3871;
-    background: #E5E5E5;
-    border: 1px solid #0A3871;
+.btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#criptografar {
+    color: white;
+    background: #0A3871;
+    border: none;
 }
 
 #saida {
@@ -90,6 +100,14 @@ aside{
     border-radius: 32px;
 
     margin-right: 40px;
+}
+
+#nao-encontrado{
+    margin: 15% 32px;
+}
+
+#nao-encontrado img{
+    height: 33%;
 }
 
 h2{
@@ -114,3 +132,31 @@ h2{
     color: #495057;
 }
 
+.invisivel{
+    display: none;
+}
+
+#retorno{
+    margin: 0 32px;
+}
+
+#mensagem-retornada {
+    border-radius: 16px;
+
+    width: 336px;
+    height: 360px;
+    margin: 32px auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #495057;
+}
+
+#copiar{
+    display: block;
+    margin: 0 auto;
+}
