@@ -88,11 +88,27 @@ function descriptografia(){
             console.log(escrita);
         }
     }
-    console.log(escrita);
+
+    //passa valor descriptografado para o #mensagem-retornada e a mostra na saída
+    mensagemRetornada.value = escrita;
+    naoEncontrado.classList.add('invisivel');
+    retorno.classList.remove('invisivel');
+}
+
+function copiarTexto(){
+  let texto = document.getElementById("mensagem-retornada");
+
+  //selecionar o texto
+  texto.select();
+  texto.setSelectionRange(0, 99999); /* para mobile */
+
+   //copiar o texto dentro do textarea
+  navigator.clipboard.writeText(texto.value);
 }
 
 const cripto = document.getElementById('criptografar');
 const descripto = document.getElementById('descriptografar');
+const textoCopiado = document.getElementById('copiar');
 
 const mensagemRetornada = document.getElementById('mensagem-retornada');
 const naoEncontrado = document.getElementById('nao-encontrado');
@@ -100,3 +116,4 @@ const retorno = document.getElementById('retorno');
 
 cripto.addEventListener("click", criptografia);
 descripto.onclick = descriptografia;
+textoCopiado.onclick = copiarTexto;
